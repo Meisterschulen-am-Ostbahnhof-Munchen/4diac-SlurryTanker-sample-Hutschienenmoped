@@ -31,13 +31,7 @@
 			<Attribute Name="width" Type="LREAL" Value="1333.3333333333335"/>
 			<Attribute Name="height" Type="LREAL" Value="666.6666666666667"/>
 		</SubApp>
-		<SubApp Name="mapping_DataPanel" Type="mapping_DataPanel" Comment="" x="0.0" y="0.0">
-			<Attribute Name="width" Type="LREAL" Value="1333.3333333333335"/>
-			<Attribute Name="height" Type="LREAL" Value="666.6666666666667"/>
-			<Attribute Name="width" Type="LREAL" Value="1333.3333333333335"/>
-			<Attribute Name="height" Type="LREAL" Value="666.6666666666667"/>
-		</SubApp>
-		<SubApp Name="mapping_blink" Type="mapping_blink" Comment="" x="0.0" y="1920.0">
+		<SubApp Name="mapping_DataPanel" Type="mapping_Hutschienenmoped_XL" Comment="" x="0.0" y="0.0">
 		</SubApp>
 		<EventConnections>
 			<Connection Source="INIT" Destination="mapping_Buttons.INIT" Comment="" dx1="666.6666666666667">
@@ -50,9 +44,6 @@
 				<Attribute Name="Visible" Value="false"/>
 			</Connection>
 			<Connection Source="INIT" Destination="mapping_DataPanel.INIT" Comment="" dx1="80.0" dx2="80.0" dy="-100.0">
-				<Attribute Name="Visible" Value="false"/>
-			</Connection>
-			<Connection Source="INIT" Destination="mapping_blink.INIT" Comment="" dx1="873.3333333333334">
 				<Attribute Name="Visible" Value="false"/>
 			</Connection>
 		</EventConnections>
