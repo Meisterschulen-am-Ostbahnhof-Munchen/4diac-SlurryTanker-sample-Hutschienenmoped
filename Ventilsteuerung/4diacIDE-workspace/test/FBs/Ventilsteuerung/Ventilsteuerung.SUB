@@ -14,9 +14,6 @@
 		</SubAppEventInputs>
 	</SubAppInterfaceList>
 	<SubAppNetwork>
-		<SubApp Name="mapping" Type="mapping" Comment="" x="753.3333333333334" y="393.33333333333337">
-			<Attribute Name="GroupName" Type="STRING" Value="Ventilsteuerung"/>
-		</SubApp>
 		<SubApp Name="functions" Type="SlurryTanker" Comment="" x="753.3333333333334" y="926.6666666666667">
 			<Attribute Name="GroupName" Type="STRING" Value="Ventilsteuerung"/>
 		</SubApp>
@@ -25,14 +22,17 @@
 		</SubApp>
 		<Group Name="Ventilsteuerung" Comment="" x="-1200.0" y="-266.6666666666667" width="2406.666666666667" height="2406.666666666667" locked="false">
 		</Group>
+		<SubApp Name="mapping" Type="mapping" Comment="" x="753.3333333333334" y="393.33333333333337">
+			<Attribute Name="GroupName" Type="STRING" Value="Ventilsteuerung"/>
+		</SubApp>
 		<EventConnections>
-			<Connection Source="INIT" Destination="mapping.INIT" Comment="" dx1="533.3333333333334">
-				<Attribute Name="Visible" Value="false"/>
-			</Connection>
 			<Connection Source="INIT" Destination="functions.INIT" Comment="" dx1="533.3333333333334">
 				<Attribute Name="Visible" Value="false"/>
 			</Connection>
 			<Connection Source="INIT" Destination="PAGES.INIT" Comment="" dx1="720.0">
+				<Attribute Name="Visible" Value="false"/>
+			</Connection>
+			<Connection Source="INIT" Destination="mapping.INIT" Comment="" dx1="533.3333333333334" dx2="533.3333333333334" dy="0.0">
 				<Attribute Name="Visible" Value="false"/>
 			</Connection>
 		</EventConnections>
