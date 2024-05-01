@@ -255,7 +255,7 @@ EMB_RES;<Request ID="255" Action="CREATE"><FB Name="Ventilsteuerung.mapping.mapp
 EMB_RES;<Request ID="256" Action="WRITE"><Connection Source="TRUE" Destination="Ventilsteuerung.mapping.mapping_aux.UT_AuxiliaryInputMapping.QI" /></Request>
 EMB_RES;<Request ID="257" Action="WRITE"><Connection Source="255" Destination="Ventilsteuerung.mapping.mapping_aux.UT_AuxiliaryInputMapping.u8SAMember" /></Request>
 EMB_RES;<Request ID="258" Action="WRITE"><Connection Source="31000" Destination="Ventilsteuerung.mapping.mapping_aux.UT_AuxiliaryInputMapping.u16ObjId_1" /></Request>
-EMB_RES;<Request ID="259" Action="WRITE"><Connection Source="&apos;Ventilsteuerung.functions.Automatik.ein.IX&apos;" Destination="Ventilsteuerung.mapping.mapping_aux.UT_AuxiliaryInputMapping.DigitalInput_1" /></Request>
+EMB_RES;<Request ID="259" Action="WRITE"><Connection Source="&apos;Ventilsteuerung.functions.Automatik.ein.AuxInput&apos;" Destination="Ventilsteuerung.mapping.mapping_aux.UT_AuxiliaryInputMapping.DigitalInput_1" /></Request>
 EMB_RES;<Request ID="260" Action="WRITE"><Connection Source="31003" Destination="Ventilsteuerung.mapping.mapping_aux.UT_AuxiliaryInputMapping.u16ObjId_2" /></Request>
 EMB_RES;<Request ID="261" Action="WRITE"><Connection Source="&apos;Ventilsteuerung.functions.Klappen.AuxInput_heben.IX&apos;" Destination="Ventilsteuerung.mapping.mapping_aux.UT_AuxiliaryInputMapping.DigitalInput_2" /></Request>
 EMB_RES;<Request ID="262" Action="WRITE"><Connection Source="31004" Destination="Ventilsteuerung.mapping.mapping_aux.UT_AuxiliaryInputMapping.u16ObjId_3" /></Request>
@@ -296,7 +296,7 @@ EMB_RES;<Request ID="296" Action="CREATE"><FB Name="Ventilsteuerung.mapping.mapp
 EMB_RES;<Request ID="297" Action="WRITE"><Connection Source="TRUE" Destination="Ventilsteuerung.mapping.mapping_Softkeys.UT_SoftkeyMapping.QI" /></Request>
 EMB_RES;<Request ID="298" Action="WRITE"><Connection Source="255" Destination="Ventilsteuerung.mapping.mapping_Softkeys.UT_SoftkeyMapping.u8SAMember" /></Request>
 EMB_RES;<Request ID="299" Action="WRITE"><Connection Source="5000" Destination="Ventilsteuerung.mapping.mapping_Softkeys.UT_SoftkeyMapping.u16ObjId_1" /></Request>
-EMB_RES;<Request ID="300" Action="WRITE"><Connection Source="&apos;Ventilsteuerung.functions.Automatik.ein.IX&apos;" Destination="Ventilsteuerung.mapping.mapping_Softkeys.UT_SoftkeyMapping.DigitalInput_1" /></Request>
+EMB_RES;<Request ID="300" Action="WRITE"><Connection Source="&apos;Ventilsteuerung.functions.Automatik.ein.SoftKey&apos;" Destination="Ventilsteuerung.mapping.mapping_Softkeys.UT_SoftkeyMapping.DigitalInput_1" /></Request>
 EMB_RES;<Request ID="301" Action="WRITE"><Connection Source="5003" Destination="Ventilsteuerung.mapping.mapping_Softkeys.UT_SoftkeyMapping.u16ObjId_2" /></Request>
 EMB_RES;<Request ID="302" Action="WRITE"><Connection Source="&apos;Ventilsteuerung.functions.Klappen.SoftKey_heben.IX&apos;" Destination="Ventilsteuerung.mapping.mapping_Softkeys.UT_SoftkeyMapping.DigitalInput_2" /></Request>
 EMB_RES;<Request ID="303" Action="WRITE"><Connection Source="5004" Destination="Ventilsteuerung.mapping.mapping_Softkeys.UT_SoftkeyMapping.u16ObjId_3" /></Request>
