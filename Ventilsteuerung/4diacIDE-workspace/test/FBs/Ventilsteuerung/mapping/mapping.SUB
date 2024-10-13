@@ -16,22 +16,18 @@
 		<SubApp Name="mapping_Buttons" Type="mapping_Buttons" Comment="" x="0.0" y="1233.3333333333335">
 			<Attribute Name="width" Type="LREAL" Value="1333.3333333333335"/>
 			<Attribute Name="height" Type="LREAL" Value="666.6666666666667"/>
-			<Attribute Name="width" Type="LREAL" Value="1333.3333333333335"/>
-			<Attribute Name="height" Type="LREAL" Value="666.6666666666667"/>
 		</SubApp>
 		<SubApp Name="mapping_aux" Type="mapping_aux" Comment="" x="0.0" y="800.0">
-			<Attribute Name="width" Type="LREAL" Value="1333.3333333333335"/>
-			<Attribute Name="height" Type="LREAL" Value="666.6666666666667"/>
 			<Attribute Name="width" Type="LREAL" Value="1333.3333333333335"/>
 			<Attribute Name="height" Type="LREAL" Value="666.6666666666667"/>
 		</SubApp>
 		<SubApp Name="mapping_Softkeys" Type="mapping_Softkeys" Comment="" x="0.0" y="400.0">
 			<Attribute Name="width" Type="LREAL" Value="1333.3333333333335"/>
 			<Attribute Name="height" Type="LREAL" Value="666.6666666666667"/>
+		</SubApp>
+		<SubApp Name="mapping_Hutschienenmoped_XL" Type="mapping_Hutschienenmoped_XL" Comment="" x="0.0" y="0.0">
 			<Attribute Name="width" Type="LREAL" Value="1333.3333333333335"/>
 			<Attribute Name="height" Type="LREAL" Value="666.6666666666667"/>
-		</SubApp>
-		<SubApp Name="mapping_DataPanel" Type="mapping_Hutschienenmoped_XL" Comment="" x="0.0" y="0.0">
 		</SubApp>
 		<EventConnections>
 			<Connection Source="INIT" Destination="mapping_Buttons.INIT" Comment="" dx1="666.6666666666667">
@@ -43,7 +39,7 @@
 			<Connection Source="INIT" Destination="mapping_Softkeys.INIT" Comment="" dx1="80.0" dx2="80.0" dy="93.33333333333334">
 				<Attribute Name="Visible" Value="false"/>
 			</Connection>
-			<Connection Source="INIT" Destination="mapping_DataPanel.INIT" Comment="" dx1="80.0" dx2="80.0" dy="-100.0">
+			<Connection Source="INIT" Destination="mapping_Hutschienenmoped_XL.INIT" Comment="" dx1="80.0" dx2="80.0" dy="-100.0">
 				<Attribute Name="Visible" Value="false"/>
 			</Connection>
 		</EventConnections>

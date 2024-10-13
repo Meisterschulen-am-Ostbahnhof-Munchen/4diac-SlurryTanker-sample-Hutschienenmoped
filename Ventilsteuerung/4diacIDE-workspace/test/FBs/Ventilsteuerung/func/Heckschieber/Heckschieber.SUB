@@ -61,9 +61,9 @@
 			<Connection Source="INIT" Destination="AuxInput_UP.INIT" Comment="" dx1="466.67" dx2="466.67" dy="0"/>
 			<Connection Source="AuxInput_UP.IND" Destination="E_SWITCH.EI" Comment="" dx1="440" dx2="440" dy="0"/>
 			<Connection Source="E_SWITCH.EO0" Destination="E_SR.S" Comment="" dx1="473.33" dx2="473.33" dy="0"/>
-			<Connection Source="OPEN" Destination="E_SR.S" Comment="" dx1="6493.33" dx2="4353.33" dy="0"/>
+			<Connection Source="OPEN" Destination="E_SR.S" Comment="" dx1="6613.33" dx2="4353.33" dy="0"/>
 			<Connection Source="E_SWITCH.EO1" Destination="E_SR.R" Comment="" dx1="473.33" dx2="473.33" dy="0"/>
-			<Connection Source="CLOSE" Destination="E_SR.R" Comment="" dx1="5500" dx2="4160" dy="0"/>
+			<Connection Source="CLOSE" Destination="E_SR.R" Comment="" dx1="6080" dx2="4160" dy="0"/>
 			<Connection Source="E_SR.EO" Destination="AND_2.REQ" Comment="" dx1="1360" dx2="1360" dy="0"/>
 			<Connection Source="E_SR.EO" Destination="E_PULSE.REQ" Comment="" dx1="126.67" dx2="126.67" dy="0"/>
 			<Connection Source="E_SR.EO" Destination="GreenWhiteBackground_Function.EO" Comment="" dx1="406.67" dx2="406.67" dy="0"/>
