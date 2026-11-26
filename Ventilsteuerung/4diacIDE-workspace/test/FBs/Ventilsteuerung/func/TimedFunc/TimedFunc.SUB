@@ -7,7 +7,7 @@
 	<CompilerInfo>
 		<Import declaration="isobus::UT::io::Softkey::SoftKeyActivationCode::SK_RELEASED"/>
 		<Import declaration="isobus::UT::io::Auxiliary::IN::AuxiliaryState::AuxDisabled"/>
-		<Import declaration="DataPanel::io::MI::DQ::DataPanel_MI_DO::Invalid"/>
+		<Import declaration="logiBUS::io::DQ::logiBUS_DO::Invalid"/>
 	</CompilerInfo>
 	<SubAppInterfaceList>
 		<SubAppEventInputs>
@@ -26,7 +26,7 @@
 		<InputVars>
 			<VarDeclaration Name="u16ObjId" Type="UINT"/>
 			<VarDeclaration Name="u16ObjIdA" Type="UINT"/>
-			<VarDeclaration Name="Output" Type="DataPanel::io::MI::DQ::DataPanel_MI_DO_S" InitialValue="Invalid"/>
+			<VarDeclaration Name="Output" Type="logiBUS::io::DQ::logiBUS_DO_S" InitialValue="Invalid"/>
 		</InputVars>
 		<OutputVars>
 			<VarDeclaration Name="OUT" Type="BOOL">
@@ -37,7 +37,7 @@
 	<SubAppNetwork>
 		<FB Name="AND_2" Type="iec61131::bitwiseOperators::AND_2" x="4800" y="900">
 		</FB>
-		<FB Name="QX" Type="DataPanel::io::MI::DQ::DataPanel_MI_QX" x="4800" y="-100">
+		<FB Name="QX" Type="logiBUS::io::DQ::logiBUS_QX" x="4800" y="-100">
 			<Parameter Name="QI" Value="TRUE"/>
 		</FB>
 		<FB Name="E_PULSE" Type="iec61499::events::timers::E_PULSE" x="2666.67" y="0">

@@ -5,7 +5,7 @@
 	<VersionInfo Version="1.0" Author="Franz" Date="2023-01-29">
 	</VersionInfo>
 	<CompilerInfo>
-		<Import declaration="DataPanel::io::MI::DQ::DataPanel_MI_DO::Invalid"/>
+		<Import declaration="logiBUS::io::DQ::logiBUS_DO::Invalid"/>
 	</CompilerInfo>
 	<SubAppInterfaceList>
 		<SubAppEventInputs>
@@ -27,8 +27,8 @@
 			<VarDeclaration Name="u16ObjId_senken" Type="UINT"/>
 			<VarDeclaration Name="u16ObjIdA_heben" Type="UINT"/>
 			<VarDeclaration Name="u16ObjIdA_senken" Type="UINT"/>
-			<VarDeclaration Name="OutputA" Type="DataPanel::io::MI::DQ::DataPanel_MI_DO_S" InitialValue="Invalid"/>
-			<VarDeclaration Name="OutputB" Type="DataPanel::io::MI::DQ::DataPanel_MI_DO_S" InitialValue="Invalid"/>
+			<VarDeclaration Name="OutputA" Type="logiBUS::io::DQ::logiBUS_DO_S" InitialValue="Invalid"/>
+			<VarDeclaration Name="OutputB" Type="logiBUS::io::DQ::logiBUS_DO_S" InitialValue="Invalid"/>
 		</InputVars>
 		<OutputVars>
 			<VarDeclaration Name="OUT_heben" Type="BOOL"/>
