@@ -9,8 +9,8 @@
 		<Import declaration="isobus::UT::io::Softkey::SoftKeyActivationCode::SK_RELEASED"/>
 		<Import declaration="DefaultPool::AuxInput_Schneidwerk"/>
 		<Import declaration="isobus::UT::io::Auxiliary::IN::AuxiliaryState::AuxDisabled"/>
-		<Import declaration="DataPanel::io::MI::DQ::DataPanel_MI_DO::DigitalOutput_1A"/>
-		<Import declaration="DataPanel::io::MI::DQ::DataPanel_MI_DO::DigitalOutput_1B"/>
+		<Import declaration="logiBUS::io::DQ::logiBUS_DO::Output_Q1"/>
+		<Import declaration="logiBUS::io::DQ::logiBUS_DO::Invalid"/>
 	</CompilerInfo>
 	<SubAppInterfaceList>
 		<SubAppEventInputs>
@@ -25,15 +25,15 @@
 		</InputVars>
 	</SubAppInterfaceList>
 	<SubAppNetwork>
-		<FB Name="rechtslauf" Type="DataPanel::io::MI::DQ::DataPanel_MI_QX" x="5900" y="1400">
+		<FB Name="rechtslauf" Type="logiBUS::io::DQ::logiBUS_QX" x="5900" y="1400">
 			<Parameter Name="QI" Value="TRUE"/>
-			<Parameter Name="Output" Value="DigitalOutput_1A"/>
+			<Parameter Name="Output" Value="Output_Q1"/>
 		</FB>
 		<FB Name="E_T_FF_SR" Type="iec61499::events::E_T_FF_SR" x="3200" y="1500">
 		</FB>
-		<FB Name="linkslauf" Type="DataPanel::io::MI::DQ::DataPanel_MI_QX" x="5900" y="-100">
+		<FB Name="linkslauf" Type="logiBUS::io::DQ::logiBUS_QX" x="5900" y="-100">
 			<Parameter Name="QI" Value="TRUE"/>
-			<Parameter Name="Output" Value="DigitalOutput_1B"/>
+			<Parameter Name="Output" Value="Invalid"/>
 		</FB>
 		<SubApp Name="GreenWhiteBackground_Function" Type="MyLib::sys::GreenWhiteBackground3" x="5900" y="2700">
 		</SubApp>

@@ -5,7 +5,7 @@
 	<VersionInfo Version="1.0" Author="franz" Date="2023-02-11">
 	</VersionInfo>
 	<CompilerInfo>
-		<Import declaration="DataPanel::io::MI::DQ::DataPanel_MI_DO::Invalid"/>
+		<Import declaration="logiBUS::io::DQ::logiBUS_DO::Invalid"/>
 	</CompilerInfo>
 	<SubAppInterfaceList>
 		<SubAppEventInputs>
@@ -23,17 +23,17 @@
 			<VarDeclaration Name="IN_senken" Type="BOOL">
 				<Attribute Name="YPOSITION" Type="INT" Value="0"/>
 			</VarDeclaration>
-			<VarDeclaration Name="OutputA" Type="DataPanel::io::MI::DQ::DataPanel_MI_DO_S" InitialValue="Invalid"/>
-			<VarDeclaration Name="OutputB" Type="DataPanel::io::MI::DQ::DataPanel_MI_DO_S" InitialValue="Invalid"/>
+			<VarDeclaration Name="OutputA" Type="logiBUS::io::DQ::logiBUS_DO_S" InitialValue="Invalid"/>
+			<VarDeclaration Name="OutputB" Type="logiBUS::io::DQ::logiBUS_DO_S" InitialValue="Invalid"/>
 		</InputVars>
 	</SubAppInterfaceList>
 	<SubAppNetwork>
 		<FB Name="OR_2" Type="iec61131::bitwiseOperators::OR_2" x="-713.33" y="526.67">
 		</FB>
-		<FB Name="QXB" Type="DataPanel::io::MI::DQ::DataPanel_MI_QX" x="293.33" y="526.67">
+		<FB Name="QXB" Type="logiBUS::io::DQ::logiBUS_QX" x="293.33" y="526.67">
 			<Parameter Name="QI" Value="TRUE"/>
 		</FB>
-		<FB Name="QXA" Type="DataPanel::io::MI::DQ::DataPanel_MI_QX" x="300" y="1500">
+		<FB Name="QXA" Type="logiBUS::io::DQ::logiBUS_QX" x="300" y="1500">
 			<Parameter Name="QI" Value="TRUE"/>
 		</FB>
 		<EventConnections>

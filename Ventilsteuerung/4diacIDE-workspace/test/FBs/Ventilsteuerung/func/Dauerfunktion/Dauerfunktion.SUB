@@ -9,7 +9,7 @@
 		<Import declaration="isobus::UT::io::Softkey::SoftKeyActivationCode::SK_RELEASED"/>
 		<Import declaration="DefaultPool::AuxInput_Licht"/>
 		<Import declaration="isobus::UT::io::Auxiliary::IN::AuxiliaryState::AuxDisabled"/>
-		<Import declaration="DataPanel::io::MI::DQ::DataPanel_MI_DO::DigitalOutput_8A"/>
+		<Import declaration="logiBUS::io::DQ::logiBUS_DO::Output_Q8"/>
 	</CompilerInfo>
 	<SubAppInterfaceList>
 		<InputVars>
@@ -20,9 +20,9 @@
 	<SubAppNetwork>
 		<FB Name="E_T_FF" Type="iec61499::events::E_T_FF" x="1600" y="100">
 		</FB>
-		<FB Name="QX" Type="DataPanel::io::MI::DQ::DataPanel_MI_QX" x="4400" y="1000">
+		<FB Name="QX" Type="logiBUS::io::DQ::logiBUS_QX" x="4400" y="1000">
 			<Parameter Name="QI" Value="TRUE"/>
-			<Parameter Name="Output" Value="DigitalOutput_8A"/>
+			<Parameter Name="Output" Value="Output_Q8"/>
 		</FB>
 		<SubApp Name="GreenWhiteBackground_Function" Type="MyLib::sys::GreenWhiteBackground3C" x="4800" y="-1100">
 		</SubApp>
