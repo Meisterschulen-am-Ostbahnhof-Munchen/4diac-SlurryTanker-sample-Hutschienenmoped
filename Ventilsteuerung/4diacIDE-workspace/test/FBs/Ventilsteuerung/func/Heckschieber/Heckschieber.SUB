@@ -9,7 +9,7 @@
 		<Import declaration="isobus::UT::io::Softkey::SoftKeyActivationCode::SK_RELEASED"/>
 		<Import declaration="DefaultPool::AuxInput_Heckschieber"/>
 		<Import declaration="isobus::UT::io::Auxiliary::IN::AuxiliaryState::AuxDisabled"/>
-		<Import declaration="DataPanel::io::MI::DQ::DataPanel_MI_DO::DigitalOutput_6B"/>
+		<Import declaration="logiBUS::io::DQ::logiBUS_DO::Output_Q12"/>
 	</CompilerInfo>
 	<SubAppInterfaceList>
 		<SubAppEventInputs>
@@ -35,9 +35,9 @@
 	<SubAppNetwork>
 		<FB Name="E_F_TRIG" Type="iec61499::events::E_F_TRIG" x="7053.33" y="926.67">
 		</FB>
-		<FB Name="QXB" Type="DataPanel::io::MI::DQ::DataPanel_MI_QX" x="7100" y="-300">
+		<FB Name="QXB" Type="logiBUS::io::DQ::logiBUS_QX" x="7100" y="-300">
 			<Parameter Name="QI" Value="TRUE"/>
-			<Parameter Name="Output" Value="DigitalOutput_6B"/>
+			<Parameter Name="Output" Value="Output_Q12"/>
 		</FB>
 		<FB Name="E_T_FF_SR" Type="iec61499::events::E_T_FF_SR" x="3333.33" y="1566.67">
 		</FB>
